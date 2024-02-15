@@ -6,52 +6,77 @@
 //
 
 import SwiftUI
-import SwiftData
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+    
+    @State var selectedIndex = 1
+    
+    @Environment(\.colorScheme) var colorScheme
+    
+    private var icons = ["chart.bar.doc.horizontal", "circle.grid.cross.fill", "creditcard", "bolt.heart"]
 
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+        VStack {
+            ZStack {
+                switch selectedIndex {
+                case 0:
+                    TransactionsView()
+                case 1:
+                    HomeView()
+                    
+                case 2:
+                    NavigationView {
+                        VStack {
+                            Text("hello")
+                                .navigationTitle("Third")
+                        }
                     }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
+                case 3:
+                    NavigationView {
+                        VStack {
+                            Text("hello")
+                                .navigationTitle("Fourth")
+                        }
                     }
+                default:
+                    Text("hello")
                 }
             }
-        } detail: {
-            Text("Select an item")
+            HStack {
+                ForEach(0..<4, id: \.self) {number in
+                    Spacer()
+                    Button(action: {
+                        self.selectedIndex = number
+                    }, label: {
+                        Image(systemName: icons[number])
+                            .font(.system(
+                                size: 25,
+                                weight: .regular,
+                                design: .default
+                            ))
+                            .foregroundColor(getForegroundColor(number))
+                            .frame(width: 50, height: 50)
+                            .background(getBackgroundColor(number))
+                            .cornerRadius(10.0)
+                    })
+                    Spacer()
+                }
+            }
         }
     }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
+    
+    func getBackgroundColor(_ number: Int) -> Color {
+        if colorScheme == .light {
+            return selectedIndex == number ? .black : .white
         }
+        return selectedIndex == number ? .white : .black
     }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
+    
+    func getForegroundColor(_ number: Int) -> Color {
+        if colorScheme == .light {
+            return selectedIndex == number ? .white : Color(UIColor.lightGray)
         }
+        return selectedIndex == number ? .black : Color(UIColor.lightGray)
     }
 }
 

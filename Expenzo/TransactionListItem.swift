@@ -8,8 +8,27 @@
 import SwiftUI
 
 struct TransactionListItem: View {
+    @Environment(\.colorScheme) var colorScheme
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Image(systemName: "message")
+                .font(.system(size: 20, weight: .regular, design: .default))
+                .foregroundColor(colorScheme == .dark ? .white : .black)
+                .frame(width: 50, height: 50)
+                .background(colorScheme == .dark ? Color(UIColor.darkGray) : .gray)
+                .cornerRadius(15)
+            VStack(alignment: .leading) {
+                Text("Ola")
+                    .font(.subheadline.bold())
+                Text("22nd Jan, 16:19")
+                    .font(.subheadline)
+            }
+            Spacer()
+            Text("-100")
+                .font(.title2.weight(.semibold))
+                .foregroundColor(Bool.random() ? .green : .primary)
+        }
     }
 }
 

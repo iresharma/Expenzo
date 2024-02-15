@@ -12,6 +12,11 @@
 		67B5A7C62B790E3500EB66B1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5A7C52B790E3500EB66B1 /* Item.swift */; };
 		67B5A7C82B790E3600EB66B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67B5A7C72B790E3600EB66B1 /* Assets.xcassets */; };
 		67B5A7CB2B790E3600EB66B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67B5A7CA2B790E3600EB66B1 /* Preview Assets.xcassets */; };
+		67BBCE3B2B7EB7040012D968 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BBCE3A2B7EB7040012D968 /* Transactions.swift */; };
+		67BBCE3D2B7EBA510012D968 /* TransactionListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BBCE3C2B7EBA510012D968 /* TransactionListItem.swift */; };
+		67D37F152B7A1CC8000CE4A3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D37F142B7A1CC8000CE4A3 /* HomeView.swift */; };
+		67D37F172B7A2AE8000CE4A3 /* SpendBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D37F162B7A2AE8000CE4A3 /* SpendBarChart.swift */; };
+		67D37F192B7A31C7000CE4A3 /* ExpenseChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D37F182B7A31C7000CE4A3 /* ExpenseChart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,11 @@
 		67B5A7CA2B790E3600EB66B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		67B5A7CC2B790E3600EB66B1 /* Expenzo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Expenzo.entitlements; sourceTree = "<group>"; };
 		67B5A7CD2B790E3600EB66B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67BBCE3A2B7EB7040012D968 /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
+		67BBCE3C2B7EBA510012D968 /* TransactionListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListItem.swift; sourceTree = "<group>"; };
+		67D37F142B7A1CC8000CE4A3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		67D37F162B7A2AE8000CE4A3 /* SpendBarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendBarChart.swift; sourceTree = "<group>"; };
+		67D37F182B7A31C7000CE4A3 /* ExpenseChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseChart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,11 @@
 				67B5A7CC2B790E3600EB66B1 /* Expenzo.entitlements */,
 				67B5A7CD2B790E3600EB66B1 /* Info.plist */,
 				67B5A7C92B790E3600EB66B1 /* Preview Content */,
+				67D37F142B7A1CC8000CE4A3 /* HomeView.swift */,
+				67D37F162B7A2AE8000CE4A3 /* SpendBarChart.swift */,
+				67D37F182B7A31C7000CE4A3 /* ExpenseChart.swift */,
+				67BBCE3A2B7EB7040012D968 /* Transactions.swift */,
+				67BBCE3C2B7EBA510012D968 /* TransactionListItem.swift */,
 			);
 			path = Expenzo;
 			sourceTree = "<group>";
@@ -145,8 +160,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				67B5A7C42B790E3500EB66B1 /* ContentView.swift in Sources */,
+				67D37F152B7A1CC8000CE4A3 /* HomeView.swift in Sources */,
+				67BBCE3B2B7EB7040012D968 /* Transactions.swift in Sources */,
 				67B5A7C62B790E3500EB66B1 /* Item.swift in Sources */,
+				67D37F172B7A2AE8000CE4A3 /* SpendBarChart.swift in Sources */,
+				67BBCE3D2B7EBA510012D968 /* TransactionListItem.swift in Sources */,
 				67B5A7C22B790E3500EB66B1 /* ExpenzoApp.swift in Sources */,
+				67D37F192B7A31C7000CE4A3 /* ExpenseChart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +298,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Expenzo/Expenzo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Expenzo/Preview Content\"";
@@ -295,8 +316,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.iresharma.Expenzo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apps.Expenzo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,6 +331,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Expenzo/Expenzo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Expenzo/Preview Content\"";
@@ -326,8 +349,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.iresharma.Expenzo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apps.Expenzo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
