@@ -26,12 +26,7 @@ struct ContentView: View {
                 case 2:
                     AccountsView()
                 case 3:
-                    NavigationView {
-                        VStack {
-                            Text("hello")
-                                .navigationTitle("Fourth")
-                        }
-                    }
+                    CategoriesView()
                 default:
                     Text("hello")
                 }

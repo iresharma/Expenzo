@@ -12,6 +12,14 @@
 		672B0B232B7FF9EE00ABEE70 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B0B222B7FF9EE00ABEE70 /* CardView.swift */; };
 		672B0B252B80076F00ABEE70 /* TaggedTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B0B242B80076F00ABEE70 /* TaggedTransactions.swift */; };
 		672B0B272B80083800ABEE70 /* UntaggedTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B0B262B80083800ABEE70 /* UntaggedTransactions.swift */; };
+		679ECDD32B8013A60081C8BE /* types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679ECDD22B8013A60081C8BE /* types.swift */; };
+		679ECDD52B8013BF0081C8BE /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679ECDD42B8013BF0081C8BE /* constants.swift */; };
+		679ECDD72B80144B0081C8BE /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679ECDD62B80144B0081C8BE /* utils.swift */; };
+		679ECDD92B8014C20081C8BE /* merchantInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679ECDD82B8014C20081C8BE /* merchantInfo.swift */; };
+		679ECDDB2B8015460081C8BE /* balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679ECDDA2B8015460081C8BE /* balance.swift */; };
+		679ECDDD2B8015CD0081C8BE /* account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679ECDDC2B8015CD0081C8BE /* account.swift */; };
+		679ECDDF2B8016A90081C8BE /* engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679ECDDE2B8016A90081C8BE /* engine.swift */; };
+		679ECDE12B801A700081C8BE /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679ECDE02B801A700081C8BE /* CategoriesView.swift */; };
 		67B5A7C22B790E3500EB66B1 /* ExpenzoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5A7C12B790E3500EB66B1 /* ExpenzoApp.swift */; };
 		67B5A7C42B790E3500EB66B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5A7C32B790E3500EB66B1 /* ContentView.swift */; };
 		67B5A7C62B790E3500EB66B1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5A7C52B790E3500EB66B1 /* Item.swift */; };
@@ -30,6 +38,14 @@
 		672B0B222B7FF9EE00ABEE70 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		672B0B242B80076F00ABEE70 /* TaggedTransactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaggedTransactions.swift; sourceTree = "<group>"; };
 		672B0B262B80083800ABEE70 /* UntaggedTransactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UntaggedTransactions.swift; sourceTree = "<group>"; };
+		679ECDD22B8013A60081C8BE /* types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = types.swift; sourceTree = "<group>"; };
+		679ECDD42B8013BF0081C8BE /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		679ECDD62B80144B0081C8BE /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
+		679ECDD82B8014C20081C8BE /* merchantInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = merchantInfo.swift; sourceTree = "<group>"; };
+		679ECDDA2B8015460081C8BE /* balance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = balance.swift; sourceTree = "<group>"; };
+		679ECDDC2B8015CD0081C8BE /* account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = account.swift; sourceTree = "<group>"; };
+		679ECDDE2B8016A90081C8BE /* engine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = engine.swift; sourceTree = "<group>"; };
+		679ECDE02B801A700081C8BE /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
 		67B5A7BE2B790E3500EB66B1 /* Expenzo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expenzo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67B5A7C12B790E3500EB66B1 /* ExpenzoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenzoApp.swift; sourceTree = "<group>"; };
 		67B5A7C32B790E3500EB66B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +72,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		679ECDD12B80138D0081C8BE /* TransactionEngine */ = {
+			isa = PBXGroup;
+			children = (
+				679ECDD22B8013A60081C8BE /* types.swift */,
+				679ECDD42B8013BF0081C8BE /* constants.swift */,
+				679ECDD62B80144B0081C8BE /* utils.swift */,
+				679ECDD82B8014C20081C8BE /* merchantInfo.swift */,
+				679ECDDA2B8015460081C8BE /* balance.swift */,
+				679ECDDC2B8015CD0081C8BE /* account.swift */,
+				679ECDDE2B8016A90081C8BE /* engine.swift */,
+			);
+			path = TransactionEngine;
+			sourceTree = "<group>";
+		};
 		67B5A7B52B790E3500EB66B1 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +105,7 @@
 		67B5A7C02B790E3500EB66B1 /* Expenzo */ = {
 			isa = PBXGroup;
 			children = (
+				679ECDD12B80138D0081C8BE /* TransactionEngine */,
 				67B5A7C12B790E3500EB66B1 /* ExpenzoApp.swift */,
 				67B5A7C32B790E3500EB66B1 /* ContentView.swift */,
 				67B5A7C52B790E3500EB66B1 /* Item.swift */,
@@ -92,6 +123,7 @@
 				672B0B222B7FF9EE00ABEE70 /* CardView.swift */,
 				672B0B242B80076F00ABEE70 /* TaggedTransactions.swift */,
 				672B0B262B80083800ABEE70 /* UntaggedTransactions.swift */,
+				679ECDE02B801A700081C8BE /* CategoriesView.swift */,
 			);
 			path = Expenzo;
 			sourceTree = "<group>";
@@ -177,16 +209,24 @@
 				672B0B212B7FF47300ABEE70 /* AccountsView.swift in Sources */,
 				67B5A7C42B790E3500EB66B1 /* ContentView.swift in Sources */,
 				67D37F152B7A1CC8000CE4A3 /* HomeView.swift in Sources */,
+				679ECDD92B8014C20081C8BE /* merchantInfo.swift in Sources */,
 				67BBCE3B2B7EB7040012D968 /* Transactions.swift in Sources */,
+				679ECDDF2B8016A90081C8BE /* engine.swift in Sources */,
 				672B0B252B80076F00ABEE70 /* TaggedTransactions.swift in Sources */,
 				672B0B1F2B7FEA9100ABEE70 /* TransactionDetailView.swift in Sources */,
+				679ECDE12B801A700081C8BE /* CategoriesView.swift in Sources */,
 				67B5A7C62B790E3500EB66B1 /* Item.swift in Sources */,
+				679ECDDD2B8015CD0081C8BE /* account.swift in Sources */,
+				679ECDDB2B8015460081C8BE /* balance.swift in Sources */,
+				679ECDD72B80144B0081C8BE /* utils.swift in Sources */,
 				67D37F172B7A2AE8000CE4A3 /* SpendBarChart.swift in Sources */,
+				679ECDD52B8013BF0081C8BE /* constants.swift in Sources */,
 				67BBCE3D2B7EBA510012D968 /* TransactionListItem.swift in Sources */,
 				67B5A7C22B790E3500EB66B1 /* ExpenzoApp.swift in Sources */,
 				672B0B232B7FF9EE00ABEE70 /* CardView.swift in Sources */,
 				672B0B272B80083800ABEE70 /* UntaggedTransactions.swift in Sources */,
 				67D37F192B7A31C7000CE4A3 /* ExpenseChart.swift in Sources */,
+				679ECDD32B8013A60081C8BE /* types.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
