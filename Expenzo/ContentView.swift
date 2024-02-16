@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var selectedIndex = 1
+    @State var selectedIndex = 2
     
     @Environment(\.colorScheme) var colorScheme
     
@@ -24,12 +24,7 @@ struct ContentView: View {
                 case 1:
                     HomeView()
                 case 2:
-                    NavigationView {
-                        VStack {
-                            Text("hello")
-                                .navigationTitle("Third")
-                        }
-                    }
+                    AccountsView()
                 case 3:
                     NavigationView {
                         VStack {

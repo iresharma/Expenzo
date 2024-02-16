@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		672B0B1F2B7FEA9100ABEE70 /* TransactionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B0B1E2B7FEA9100ABEE70 /* TransactionDetailView.swift */; };
+		672B0B212B7FF47300ABEE70 /* AccountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B0B202B7FF47300ABEE70 /* AccountsView.swift */; };
+		672B0B232B7FF9EE00ABEE70 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672B0B222B7FF9EE00ABEE70 /* CardView.swift */; };
 		67B5A7C22B790E3500EB66B1 /* ExpenzoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5A7C12B790E3500EB66B1 /* ExpenzoApp.swift */; };
 		67B5A7C42B790E3500EB66B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5A7C32B790E3500EB66B1 /* ContentView.swift */; };
 		67B5A7C62B790E3500EB66B1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B5A7C52B790E3500EB66B1 /* Item.swift */; };
@@ -22,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		672B0B1E2B7FEA9100ABEE70 /* TransactionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailView.swift; sourceTree = "<group>"; };
+		672B0B202B7FF47300ABEE70 /* AccountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsView.swift; sourceTree = "<group>"; };
+		672B0B222B7FF9EE00ABEE70 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		67B5A7BE2B790E3500EB66B1 /* Expenzo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expenzo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67B5A7C12B790E3500EB66B1 /* ExpenzoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenzoApp.swift; sourceTree = "<group>"; };
 		67B5A7C32B790E3500EB66B1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 				67BBCE3A2B7EB7040012D968 /* Transactions.swift */,
 				67BBCE3C2B7EBA510012D968 /* TransactionListItem.swift */,
 				672B0B1E2B7FEA9100ABEE70 /* TransactionDetailView.swift */,
+				672B0B202B7FF47300ABEE70 /* AccountsView.swift */,
+				672B0B222B7FF9EE00ABEE70 /* CardView.swift */,
 			);
 			path = Expenzo;
 			sourceTree = "<group>";
@@ -162,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				672B0B212B7FF47300ABEE70 /* AccountsView.swift in Sources */,
 				67B5A7C42B790E3500EB66B1 /* ContentView.swift in Sources */,
 				67D37F152B7A1CC8000CE4A3 /* HomeView.swift in Sources */,
 				67BBCE3B2B7EB7040012D968 /* Transactions.swift in Sources */,
@@ -170,6 +177,7 @@
 				67D37F172B7A2AE8000CE4A3 /* SpendBarChart.swift in Sources */,
 				67BBCE3D2B7EBA510012D968 /* TransactionListItem.swift in Sources */,
 				67B5A7C22B790E3500EB66B1 /* ExpenzoApp.swift in Sources */,
+				672B0B232B7FF9EE00ABEE70 /* CardView.swift in Sources */,
 				67D37F192B7A31C7000CE4A3 /* ExpenseChart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
