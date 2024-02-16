@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var selectedIndex = 2
+    @State var selectedIndex = 1
     
     @Environment(\.colorScheme) var colorScheme
     

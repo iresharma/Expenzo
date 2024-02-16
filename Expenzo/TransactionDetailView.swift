@@ -36,16 +36,17 @@ struct TransactionDetailView: View {
                     .cornerRadius(15)
                     .shadow(radius: 20)
             }
+            Spacer(minLength: 20)
             HStack {
                 VStack(alignment: .leading) {
-                    Image(systemName: "creditcard")
-                        .font(.title)
+                    Text("₹1.23.456")
+                        .fontWeight(.bold)
                     Text("XXXX XXXX XXXX 1234")
                         .font(.caption)
                 }
                 Spacer()
-                Text("₹1.23.456")
-                    .fontWeight(.bold)
+                Image("bi_hsbc")
+                    .cornerRadius(1000)
             }
             .padding(10)
             .background(Color.red.opacity(0.5))
