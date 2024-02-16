@@ -23,7 +23,6 @@ struct ContentView: View {
                     TransactionsView()
                 case 1:
                     HomeView()
-                    
                 case 2:
                     NavigationView {
                         VStack {

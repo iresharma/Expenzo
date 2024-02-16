@@ -71,9 +71,8 @@ struct ExpenseChart: View {
                 Text(mid?.title ?? "Most Expenditure")
                     .font(.callout)
                     .foregroundStyle(.secondary)
-                Text(mid != nil ? String(format: "%.2f", mid?.revenue ?? 10) : "Investments")
+                Text(mid != nil ? String(format: "₹%.2f", mid?.revenue ?? 10) : "Investments")
                     .font(.title3.bold())
-                    .foregroundStyle(.black)
             }
         }
     }

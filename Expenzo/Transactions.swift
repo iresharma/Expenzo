@@ -25,7 +25,7 @@ struct TransactionsView: View {
             VStack {
                 Picker("Types of Vehicles - Segmented", selection: $selectedItem) {
                     ForEach(0..<2, id: \.self) { tab in
-                        Text(tab == 0 ? "Untagged Transactions" : "All transactions")
+                        Text(tab == 0 ? "All transactions" : "Untagged Transactions")
                    }
                 }
                 .pickerStyle(.segmented)
@@ -60,9 +60,11 @@ struct TransactionsView: View {
                     }
               }
                 .sheet(isPresented: $showingCredits) {
-                            Text("This app was brought to you by Hacking with Swift")
-                                .presentationDetents([.medium, .large])
-                        }
+                    TransactionDetailView()
+                        .padding()
+                        .padding([.top], 20)
+                        .presentationDetents([.height(180)])
+                    }
                 .searchable(text: $search)
                 .navigationBarTitle("Transactions", displayMode: .inline)
                 .toolbar {

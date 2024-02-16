@@ -19,7 +19,7 @@ struct HomeView: View {
                         VStack(alignment: .leading) {
                             Text("Income")
                                 .font(.caption)
-                            Text("1,18,456")
+                            Text("₹1,18,456")
                                 .font(.system(size: 15, weight: .semibold))
                         }
                         Spacer()
@@ -29,17 +29,22 @@ struct HomeView: View {
                             .frame(width: 35, height: 35)
                             .background(Color.white)
                             .cornerRadius(10)
+                            .overlay(
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .stroke(.green, lineWidth: 0.5)
+                                )
+                            .shadow(color: .green, radius: 5)
                     }
                     .padding(10)
                     .padding([.leading, .trailing], 10)
                     .frame(width: UIScreen.main.bounds.size.width * 0.45)
-                    .background(Color.green.opacity(0.4))
+                    .background(colorScheme == .dark ? Color.green.opacity(0.6) : Color.green.opacity(0.4))
                     .cornerRadius(10)
                     HStack {
                         VStack(alignment: .leading) {
                             Text("Expense")
                                 .font(.caption)
-                            Text("1,18,456")
+                            Text("₹1,18,456")
                                 .font(.system(size: 15, weight: .semibold))
                         }
                         Spacer()
@@ -49,11 +54,16 @@ struct HomeView: View {
                             .frame(width: 35, height: 35)
                             .background(Color.white)
                             .cornerRadius(10)
+                            .overlay(
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .stroke(.red, lineWidth: 0.5)
+                                )
+                            .shadow(color: .red, radius: 5)
                     }
                     .padding(10)
                     .padding([.leading, .trailing], 10)
                     .frame(width: UIScreen.main.bounds.size.width * 0.45)
-                    .background(Color.red.opacity(0.4))
+                    .background(colorScheme == .dark ? Color.red.opacity(0.6) : Color.red.opacity(0.4))
                     .cornerRadius(10)
                 }.padding([.top], 25.0)
                 ExpenseChart()
@@ -61,6 +71,7 @@ struct HomeView: View {
                     .background(RadialGradient(gradient: Gradient(colors: [.white, .gray]), center: .center, startRadius: 50, endRadius: 200).opacity(0.3))
                     .cornerRadius(10)
                     .padding()
+                    .shadow(radius: 10)
                 Spacer()
             }
             .navigationBarTitleDisplayMode(.inline)

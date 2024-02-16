@@ -18,6 +18,7 @@ struct TransactionListItem: View {
                 .frame(width: 50, height: 50)
                 .background(colorScheme == .dark ? Color(UIColor.darkGray) : .gray)
                 .cornerRadius(15)
+                .shadow(radius: 10)
             VStack(alignment: .leading) {
                 Text("Ola")
                     .font(.subheadline.bold())
@@ -25,7 +26,7 @@ struct TransactionListItem: View {
                     .font(.subheadline)
             }
             Spacer()
-            Text("-100")
+            Text("- ₹100")
                 .font(.title2.weight(.semibold))
                 .foregroundColor(Bool.random() ? .green : .primary)
         }
